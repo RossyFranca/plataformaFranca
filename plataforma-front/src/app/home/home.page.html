@@ -1,0 +1,22 @@
+<div class="jumbotron text-center">
+  <h1>Karaokê</h1>
+</div>
+<form [formGroup]="formBusca">
+    <div class="row">
+        <div>
+          <label for="artista">Artista</label>
+          <input type="text" name="artista" class="form-control" formControlName="artista">
+        </div>
+        <div>
+          <label>Música</label>
+          <input type="text" name="musica" class="form-control" formControlName="musica">
+        </div>
+        <div>
+          <button class="btn btn-default btn-lg" (click)="buscar()">Buscar</button>
+        </div>
+      </div>
+</form>
+
+<div class="text-center">
+  <iframe [src]="data.iframe" height="1000" width="1400" scrolling="no"></iframe>
+</div>
